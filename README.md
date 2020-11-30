@@ -1,7 +1,7 @@
 # Secret Santa clone with hungarian translation
 
 Can be used at:
-https://spicyscallionsoup.github.io/mikulasozas.github.io/
+https://spicyscallionsoup.github.io/mikulasozas/
 
 Cloned from:
 https://github.com/arcanis/secretsanta
