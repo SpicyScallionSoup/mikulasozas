@@ -31,7 +31,7 @@
                 background-position: bottom right;
                 background-repeat: no-repeat;
 
-                font-family: 'Comic Sans MS';
+                font-family: 'Tahoma';
             }
 
             .main {
@@ -153,40 +153,36 @@
         <div class="main">
 
             <div class="part" style="overflow-y: auto">
-                <div class="instructions">
-                    <h1><img src="assets/mistletoe.png" style="vertical-align: middle" /> Secret Santa Generator</h1>
-                    <p>No signup, no email, no bullshit. Just a straightforward <a href="https://github.com/arcanis/secretsanta">open-source</a> tool to help you generate your secret santa pairings. One static page, and that's it.</p>
-                    <p>In the most common case (no exclusion rules, pair each guest with another at random), enter the name of your guests one line at a time. Once done, press "generate" and you're all set: send the generated links to your guests (by mail, chat, whatever floats your boat) and their pairing will be revealed to them (and only them) once they open the link.</p>
-                    <h2>Where does this tool come from?</h2>
-                    <p>I wanted to make a Secret Santa over Facebook without having to reveal to anyone my guests email addresses (so nothing that would require a backend). I also wanted not to know who was paired with me, so I had to find a way to somehow obfuscate the information. And being a developer, well, my first thought was "Let's AES it, for fun and profits!". Classic.</p>
+                <div class="Tudnivalók">
+                    <h1><img src="assets/mistletoe.png" style="vertical-align: middle" /> Mikulásozás pár generátor</h1>
+                    <p>Egyszerű párosító a repo-ból forkolva <a href="https://github.com/arcanis/secretsanta">open-source</a> mellyel könnyen készíthetzs mikulásoáshoz párosításokat.</p>
                 </div>
             </div>
 
             <form id="form" class="part">
                 <textarea id="input" class="input" autofocus></textarea>
-                <button type="submit" class="generate">Generate your pairings</button>
+                <button type="submit" class="generate">Párosítsd a résztvevőket</button>
                 <div id="result" class="result none"></div>
             </form>
 
         </div>
 
         <script id="input-placeholder" type="text/placeholder">
-            # You can add a user by adding a line
-            Santa
+            # Hozzáadhatsz új neveket minden új sorban
+            Mikulás
 
-            # You can add some details if you want to, using parentheses after the name
-            Nicholas (the elf)
+            # A név után zárójelek között további infót adhatsz meg a személyről
+            Pistike (a manó)
 
-            # You can prevent someone from being paired with someone else
-            Maël !Aurélie
-            Aurélie !Maël
+            # Megakadályozhatod, hogy egy személyt egy bizonyos másik személyel párosíts összes felkijáltójel használatával
+            Manci !Ödön
+            Ödön !Manci
 
-            # You can also exclude someone from being paired with multiple people
-            # Careful: too many exclusion rules can make your secret santa less interesting!
-            Rudolph !Santa !Nicholas (the elf)
+            # Ez több személlyel is működik, de vigyázz, ettől lehet, hogy kevésbé lesz meglepetés
+            Manci !Mikulás !Pistike (a manó)
 
-            # You can also cheat a bit and force someone to be paired with another
-            Nicholas (the saint) =Nicholas (the elf)
+            # Illetve, ha akarod, valakit kötelezően pároztathatsz egy másik személlyel
+            Pistike (a manó) =Manci
 
             ...
         </script>
