@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Secret Santa Generator</title>
+        <title>Mikulasozás pár generátor</title>
 
         <script src="vendors/Lodash-3.10.1.js"></script>
         <script src="vendors/Cryptojs.aes-3.1.2.js"></script>
@@ -30,6 +30,7 @@
                 background-image: url(assets/santa.png);
                 background-position: bottom right;
                 background-repeat: no-repeat;
+				background: radial-gradient(#0A0A0A, #202020);
 
                 font-family: 'Tahoma';
             }
@@ -153,9 +154,9 @@
         <div class="main">
 
             <div class="part" style="overflow-y: auto">
-                <div class="Tudnivalók">
+                <div class="Tudnivalók:">
                     <h1><img src="assets/mistletoe.png" style="vertical-align: middle" /> Mikulásozás pár generátor</h1>
-                    <p>Egyszerű párosító a repo-ból forkolva <a href="https://github.com/arcanis/secretsanta">open-source</a> mellyel könnyen készíthetzs mikulásoáshoz párosításokat.</p>
+                    <p>Egyszerű párosító az <a href="https://github.com/arcanis/secretsanta">alábbi</a> repo-ból klónozva, mellyel könnyen készíthetsz mikulásoáshoz párosításokat.</p>
                 </div>
             </div>
 
@@ -404,7 +405,7 @@
 
           var name = e.currentTarget.getAttribute( 'data-name' );
 
-          if ( ! confirm( 'If you click this link, you will be revealed ' + name + '\'s pairing! Are you sure you want to do this? Only do this if you\'re actually ' + name + '.\n\nUse right-click to copy the link target instead.' ) ) {
+          if ( ! confirm( 'Ha erre a linkre kattintasz, akkor megtudod ' + name + '\ párjának a nevét! Biztos hogy ezt akarod tenni? Csak akkor tedd ezt, ha te vagy ' + name + '.\n\nJobb gombbal ki tudod másolni a linket megnyitás helyett.' ) ) {
               e.preventDefault();
           }
 

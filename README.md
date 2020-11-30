@@ -1,6 +1,10 @@
-# Secret Santa
+# Secret Santa clone with hungarian translation
 
-Check it live on [arcanis.github.io/secretsanta/](http://arcanis.github.io/secretsanta/).
+Can be used at:
+https://spicyscallionsoup.github.io/mikulasozas.github.io/
+
+Cloned from:
+https://github.com/arcanis/secretsanta
 
 ## License (MIT)
 
